@@ -1,0 +1,40 @@
+form {
+  background: linear-gradient(
+    90deg,
+    rgba(191, 60%, 89%, 1) 0%,
+    rgba(56, 59%, 86%, 1) 100%
+  );
+  border: 1px solid #545454;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  padding: 40px;
+
+  input[type="submit"] {
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  input[type="submit"]:hover {
+    color: white;
+    background: linear-gradient(
+      90deg,
+      rgba(191, 60%, 89%, 1) 0%,
+      rgba(56, 59%, 86%, 1) 100%
+    );
+  }
+
+  #valid {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+input {
+  padding: 5px 10px;
+  width: 100%;
+  line-height: 16px;
+  margin: 10px 0;
+}

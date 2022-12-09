@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Sentiment Analysis</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="title">
+                Blog Sentimental Analysis
+            </div>
+ 
+        </header>
+
+        <main>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Enter a blog URL to analyze">
+                    <input type="submit" name="" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    <div id="valid"></div>
+                </form>
+            <section>
+
+            <section>
+                <strong>URL Result:</strong>
+                <div id="results">
+                <div id="status"></div>
+                <div id="polarity"></div>
+                <div id="subjectivity"></div>
+                <div id="snippet"></div>
+            </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="dev">Majeed</p>
+            <p class="note">This project is part of Udacity FEND Nano degree program</p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+    </body>
+</html>

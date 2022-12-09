@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: center;
+  padding: 10px 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(191, 60%, 89%, 1) 0%,
+    rgba(56, 59%, 86%, 1) 100%
+  );
+  padding: 20px 10px;
+
+  .title {
+    font-size: larger;
+    color: #fff;
+  }
+}
